@@ -1,0 +1,34 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Web_Client/1.0.0": {
+        "dependencies": {
+          "dropzone": "4.3.0"
+        },
+        "runtime": {
+          "Web_Client.dll": {}
+        }
+      },
+      "dropzone/4.3.0": {}
+    }
+  },
+  "libraries": {
+    "Web_Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "dropzone/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-erwoK0GJ+gDfphtbBOjUkdoe/MBDbTVwd2DvvgNdULgJmZvOHrnbZQJH6GnbMXf9wa463sASZG102ZYbSw+e/Q==",
+      "path": "dropzone/4.3.0",
+      "hashPath": "dropzone.4.3.0.nupkg.sha512"
+    }
+  }
+}
