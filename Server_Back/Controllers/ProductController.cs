@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DTO;
+using Microsoft.AspNetCore.Mvc;
 using Server_Back.Models;
 using Server_Back.Services;
 
@@ -36,14 +37,14 @@ namespace Server_Back.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Product_Request model)
+        public IActionResult Create(Product model)
         {
             _productService.Create(model);
             return Ok(new { message = "Product created" });
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, Product_Request model)
+        public IActionResult Update(int id, Product model)
         {
             _productService.Update(id, model);
             return Ok(new { message = "Product updated" });

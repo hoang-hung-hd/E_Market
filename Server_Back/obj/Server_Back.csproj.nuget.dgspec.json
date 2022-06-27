@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Practice\\Server_Back\\Server_Back\\Server_Back.csproj": {}
+    "E:\\C#\\Lession\\E_Market\\Server_Back\\Server_Back.csproj": {}
   },
   "projects": {
-    "C:\\Practice\\Server_Back\\Server_Back\\Server_Back.csproj": {
+    "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Practice\\Server_Back\\Server_Back\\Server_Back.csproj",
-        "projectName": "Server_Back",
-        "projectPath": "C:\\Practice\\Server_Back\\Server_Back\\Server_Back.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Practice\\Server_Back\\Server_Back\\obj\\",
+        "projectUniqueName": "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\Lession\\E_Market\\DTO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -33,6 +28,64 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\C#\\Lession\\E_Market\\Server_Back\\Server_Back.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\C#\\Lession\\E_Market\\Server_Back\\Server_Back.csproj",
+        "projectName": "Server_Back",
+        "projectPath": "E:\\C#\\Lession\\E_Market\\Server_Back\\Server_Back.csproj",
+        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\Lession\\E_Market\\Server_Back\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj": {
+                "projectPath": "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -96,7 +149,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

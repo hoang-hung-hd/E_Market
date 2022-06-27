@@ -1,0 +1,15 @@
+E:\C#\Lession\E_Market\DTO\bin\Debug\net6.0\DTO.exe
+E:\C#\Lession\E_Market\DTO\bin\Debug\net6.0\DTO.deps.json
+E:\C#\Lession\E_Market\DTO\bin\Debug\net6.0\DTO.runtimeconfig.json
+E:\C#\Lession\E_Market\DTO\bin\Debug\net6.0\DTO.dll
+E:\C#\Lession\E_Market\DTO\bin\Debug\net6.0\ref\DTO.dll
+E:\C#\Lession\E_Market\DTO\bin\Debug\net6.0\DTO.pdb
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\DTO.dll
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\ref\DTO.dll
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\DTO.pdb
+E:\C#\Lession\E_Market\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache

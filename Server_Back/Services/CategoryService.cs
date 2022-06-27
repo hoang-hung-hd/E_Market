@@ -1,4 +1,5 @@
-﻿using Server_Back.Models;
+﻿using DTO;
+using Server_Back.Models;
 
 namespace Server_Back.Services
 {
@@ -12,21 +13,21 @@ namespace Server_Back.Services
             _context = context;
         }
 
-        public IEnumerable<Category_Request> GetAll()
+        public IEnumerable<CategoryModel> GetAll()
         {
             return _context.Categories;
         }
 
-        public Category_Request GetById(int id)
+        public CategoryModel GetById(int id)
         {
             return getCategory(id);
         }
-        public void Create(Category_Request model)
+        public void Create(Category model)
         {
             // validate
             if (_context.Categories.Any(x => x.CategoryName == model.CategoryName))
                 throw new Exception("Category with the name '" + model.CategoryName + "' already exists");
-            Category_Request category = new Category_Request();
+            CategoryModel category = new CategoryModel();
             category.CategoryName = model.CategoryName;
             category.Manufacturer = model.Manufacturer;
 
@@ -34,7 +35,7 @@ namespace Server_Back.Services
             _context.SaveChanges();
         }
 
-        public void Update(int id, Category_Request model)
+        public void Update(int id, Category model)
         {
             var category = getCategory(id);
 
@@ -58,7 +59,7 @@ namespace Server_Back.Services
 
         // helper methods
 
-        private Category_Request getCategory(int id)
+        private CategoryModel getCategory(int id)
         {
             var category = _context.Categories.Find(id);
             if (category == null) throw new KeyNotFoundException("Category not found");

@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
     var services = builder.Services;
     var env = builder.Environment;
     services.AddDbContext<ServerDbContext>(options => {
-        string connectString = builder.Configuration.GetConnectionString("server_back");
+        string connectString = builder.Configuration.GetConnectionString("e_market");
         options.UseSqlServer(connectString);
     });
     services.AddScoped<CategoryService, CategoryService>();

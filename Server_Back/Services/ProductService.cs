@@ -1,4 +1,5 @@
-﻿using Server_Back.Models;
+﻿using DTO;
+using Server_Back.Models;
 
 namespace Server_Back.Services
 {
@@ -12,22 +13,22 @@ namespace Server_Back.Services
             _context = context;
         }
 
-        public IEnumerable<Product_Request> GetAll()
+        public IEnumerable<ProductModel> GetAll()
         {
-            return (IEnumerable<Product_Request>)_context.Products;
+            return _context.Products;
         }
 
-        public Product_Request GetById(int id)
+        public ProductModel GetById(int id)
         {
             return getProduct(id);
         }
 
-        public void Create(Product_Request model)
+        public void Create(Product model)
         {
             // validate
             if (_context.Products.Any(x => x.ProductName == model.ProductName))
                 throw new Exception("Product with the name '" + model.ProductName + "' already exists");
-            Product_Request product = new Product_Request();
+            ProductModel product = new ProductModel();
             product.ProductName = model.ProductName;
             product.CategoryId = model.CategoryId;
             product.Description = model.Description;
@@ -38,7 +39,7 @@ namespace Server_Back.Services
             _context.SaveChanges();
         }
 
-        public void Update(int id, Product_Request model)
+        public void Update(int id, Product model)
         {
             var product = getProduct(id);
             product.ProductName = model.ProductName;
@@ -59,7 +60,7 @@ namespace Server_Back.Services
 
         // helper methods
 
-        private Product_Request getProduct(int id)
+        private ProductModel getProduct(int id)
         {
             var product = _context.Products.Find(id);
             if (product == null) throw new KeyNotFoundException("Product not found");

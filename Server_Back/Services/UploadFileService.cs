@@ -13,7 +13,7 @@ namespace Server_Back.Services
             _context = context;
         }
 
-        public void UploadFileToDatabase(List<IFormFile> postedFiles, Image_Response model)
+        public void UploadFileToDatabase(List<IFormFile> postedFiles, ImageModel model)
         {
             string wwwPath = _environment.WebRootPath;
             string contentPath = _environment.ContentRootPath;
@@ -27,7 +27,7 @@ namespace Server_Back.Services
             List<string> uploadedFiles = new List<string>();
             foreach (IFormFile postedFile in postedFiles)
             {
-                Image_Request imageNew = new Image_Request();
+                ImageModel imageNew = new ImageModel();
                 
                 string fileName = Path.GetFileName(postedFile.FileName);
                 imageNew.ImageName = fileName;

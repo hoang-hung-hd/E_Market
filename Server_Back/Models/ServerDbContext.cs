@@ -23,16 +23,16 @@ namespace Server_Back.Models
                 }
             }
 
-            modelBuilder.Entity<ProductImage>().HasKey(table => new {
+            modelBuilder.Entity<ProductImageModel>().HasKey(table => new {
                 table.ProductId,
                 table.ImageId
             });
         }
 
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Image> Images { set; get; }
-        public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<CategoryModel> Categories { get; set; }
+        public DbSet<ProductModel> Products { get; set; }
+        public DbSet<ImageModel> Images { set; get; }
+        public DbSet<ProductImageModel> ProductImages { get; set; }
         
     }
 }

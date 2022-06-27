@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DTO;
+using Microsoft.AspNetCore.Mvc;
 using Server_Back.Models;
 using Server_Back.Services;
 
@@ -36,14 +37,14 @@ namespace Server_Back.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Category_Request model)
+        public IActionResult Create(Category model)
         {
             _categoryService.Create(model);
             return Ok(new { message = "Category created" });
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, Category_Request model)
+        public IActionResult Update(int id, Category model)
         {
             _categoryService.Update(id, model);
             return Ok(new { message = "Category updated" });
