@@ -7,9 +7,9 @@ namespace Web_Client.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private Microsoft.AspNetCore.Hosting.IHostingEnvironment _environment;
+        private IWebHostEnvironment _environment;
 
-        public HomeController(ILogger<HomeController> logger, Microsoft.AspNetCore.Hosting.IHostingEnvironment environment)
+        public HomeController(ILogger<HomeController> logger, IWebHostEnvironment environment)
         {
             _logger = logger;
             _environment = environment; 
@@ -19,11 +19,10 @@ namespace Web_Client.Controllers
         {
             return View();
         }
-
         [HttpPost]
-        public void Upload(List<IFormFile> postedFiles)
+        public IActionResult Index(IFormFile file)
         {
-            string wwwPath = _environment.WebRootPath;
+            //string wwwPath = _environment.WebRootPath;
             string contentPath = _environment.ContentRootPath;
 
             string path = Path.Combine(_environment.WebRootPath, "Uploads");
@@ -32,18 +31,14 @@ namespace Web_Client.Controllers
                 Directory.CreateDirectory(path);
             }
 
-            List<string> uploadedFiles = new List<string>();
-            foreach (IFormFile postedFile in postedFiles)
+            string fileName = Path.GetFileName(file.FileName);
+            using (FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
             {
-
-                string fileName = Path.GetFileName(postedFile.FileName);
-                using (FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
-                {
-                    postedFile.CopyTo(stream);
-                    uploadedFiles.Add(fileName);
-                }
+                file.CopyTo(stream);
+                ViewBag.Message += string.Format("<b>{0}</b> uploaded.<br />", fileName);
             }
-
+            return View();
         }
     }
+
 }

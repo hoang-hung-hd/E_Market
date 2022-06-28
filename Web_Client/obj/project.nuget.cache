@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "utHTErC7ApX82NvCgjqbLQy6SP3nMJK1zJBu4jV2lg/iIffajJVHZEqHyDcI36sQw2Ou3ACnw7HXoFBSRA7lTg==",
+  "dgSpecHash": "6YjfbPPQsiFn/Il1wUuHOK442OWwRvQ2PwugCaalYn6JfQ+KZtlcoO3vA6hQ+CAzVJQmhWJOp3zywKGDkWtvHQ==",
   "success": true,
-  "projectFilePath": "E:\\C#\\Lession\\E_Market\\Web_Client\\Web_Client.csproj",
+  "projectFilePath": "C:\\Practice\\E_Market\\Web_Client\\Web_Client.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hoang\\.nuget\\packages\\dropzone\\4.3.0\\dropzone.4.3.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\dropzone\\4.3.0\\dropzone.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

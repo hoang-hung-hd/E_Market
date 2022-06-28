@@ -1,40 +1,22 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<div id="dropzone">
+     <form asp-action="Index" asp-controller="Home" method="post" class="dropzone needsclick dz-clickable" id="uploader">
+        <div class="dz-message needsclick">
+            Drop files here or click to upload.<br>
+        </div>
+     </form>
+</div>
 
-<form asp-action="Upload" asp-controller="Home" method="post" enctype="multipart/form-data" class="dropzone dz-clickable form-horizontal form-bordered" id="dropzoneForm">
-  <div class="form-group form-actions">
-    <div class="col-md-9 col-md-offset-4">
-        <button type="submit" id="submit" class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i> Upload</button>
-    </div>
-  </div>
-</form>
+ <span style="color:green">@Html.Raw(ViewBag.Message)</span>
 
-@section Scripts
-{
-  <link rel="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js"> </script>
- <script>
-       function myParamName() {
-           return "DocumentPhotos";
-        }
-        Dropzone.options.dropzoneForm = {
-            autoProcessQueue: false,
-            paramName: myParamName, // The name that will be used to transfer the file
-            uploadMultiple: true,
-            parallelUploads: 100,
-            init: function () {
-                console.log("active");
-                var wrapperThis = this;
-
-                $("#submit").click(function (e) {
-                    e.preventDefault();
-                    wrapperThis.processQueue();
-                });
-            },
-            accept: function (file, done) {
-                done();
-            }
-        };
-</script>
+@section Scripts{
+    <script>
+      // Note that the name "myDropzone" is the camelized
+      // id of the form.
+      Dropzone.options.myDropzone = {
+        // Configuration options go here
+      };
+    </script>
 }

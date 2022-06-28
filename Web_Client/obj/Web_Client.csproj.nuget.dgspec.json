@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\Lession\\E_Market\\Web_Client\\Web_Client.csproj": {}
+    "C:\\Practice\\E_Market\\Web_Client\\Web_Client.csproj": {}
   },
   "projects": {
-    "E:\\C#\\Lession\\E_Market\\Web_Client\\Web_Client.csproj": {
+    "C:\\Practice\\E_Market\\Web_Client\\Web_Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\Lession\\E_Market\\Web_Client\\Web_Client.csproj",
+        "projectUniqueName": "C:\\Practice\\E_Market\\Web_Client\\Web_Client.csproj",
         "projectName": "Web_Client",
-        "projectPath": "E:\\C#\\Lession\\E_Market\\Web_Client\\Web_Client.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\Lession\\E_Market\\Web_Client\\obj\\",
+        "projectPath": "C:\\Practice\\E_Market\\Web_Client\\Web_Client.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Practice\\E_Market\\Web_Client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -63,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

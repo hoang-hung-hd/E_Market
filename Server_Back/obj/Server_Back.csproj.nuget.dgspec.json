@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\Lession\\E_Market\\Server_Back\\Server_Back.csproj": {}
+    "C:\\Practice\\E_Market\\Server_Back\\Server_Back.csproj": {}
   },
   "projects": {
-    "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj": {
+    "C:\\Practice\\E_Market\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj",
+        "projectUniqueName": "C:\\Practice\\E_Market\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\Lession\\E_Market\\DTO\\obj\\",
+        "projectPath": "C:\\Practice\\E_Market\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Practice\\E_Market\\DTO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -54,22 +59,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\C#\\Lession\\E_Market\\Server_Back\\Server_Back.csproj": {
+    "C:\\Practice\\E_Market\\Server_Back\\Server_Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\Lession\\E_Market\\Server_Back\\Server_Back.csproj",
+        "projectUniqueName": "C:\\Practice\\E_Market\\Server_Back\\Server_Back.csproj",
         "projectName": "Server_Back",
-        "projectPath": "E:\\C#\\Lession\\E_Market\\Server_Back\\Server_Back.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\Lession\\E_Market\\Server_Back\\obj\\",
+        "projectPath": "C:\\Practice\\E_Market\\Server_Back\\Server_Back.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Practice\\E_Market\\Server_Back\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -82,8 +92,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj": {
-                "projectPath": "E:\\C#\\Lession\\E_Market\\DTO\\DTO.csproj"
+              "C:\\Practice\\E_Market\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Practice\\E_Market\\DTO\\DTO.csproj"
               }
             }
           }
@@ -149,7 +159,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
